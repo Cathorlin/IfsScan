@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cmI3yAz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmI3yAz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmI3yAz" class="cmI3yAz"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cmI3yAz" class="cmI3yAz"></span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNVfYrq-iosstatusbar cmI3yAz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmI3yAz"> 
+    <div class="x-panel-top cmI3yAz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmI3yAz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmI3yAz" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;总盘点表详情&#34;}" __cid="cmI3yAz"> 
+        <div class="x-titlebar-left cmI3yAz" __cid="cmI3yAz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmI3yAz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cmI3yAz"> 
+            <i class="icon-chevron-left cmI3yAz" __cid="cmI3yAz"></i>  
+            <span __cid="cmI3yAz" class="cmI3yAz"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmI3yAz" __cid="cmI3yAz">总盘点表详情</div>  
+        <div class="x-titlebar-right  cmI3yAz" __cid="cmI3yAz">
+          <div class="empty cmI3yAz" __cid="cmI3yAz"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cmI3yAz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmI3yAz">
+      <ul xid="ul1" __cid="cmI3yAz" class="cmI3yAz"> 
+        <li class="list-group-item cmI3yAz" xid="li1" __cid="cmI3yAz"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cmI3yAz" xid="labelEdit1" style="width:977px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cmI3yAz"> 
+            <label class="x-label cmI3yAz" xid="label1" style="text-align:right;" __cid="cmI3yAz">盘点报告号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block x-edit cmI3yAz" xid="countId" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cmI3yAz"></div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cmI3yAz" xid="labelEdit3" style="width:981px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cmI3yAz"> 
+            <label class="x-label cmI3yAz" xid="label3" style="text-align:right;" __cid="cmI3yAz">货位号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block x-edit cmI3yAz" xid="location" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cmI3yAz"></div>
+          </div> 
+        </li>  
+        <li class="list-group-item cmI3yAz" xid="li4" __cid="cmI3yAz"> 
+          <table component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" responsive="true" rowActiveClass="active" class="table table-hover table-striped cmI3yAz" xid="dataTables1" data="countListData" style="font-size:xx-small;" ordering="false" data-config="{&#34;columns&#34;:[{&#34;sName&#34;:&#34;part_no&#34;,&#34;width&#34;:&#34;25%&#34;,&#34;xid&#34;:&#34;column6&#34;},{&#34;sName&#34;:&#34;lot_batch_no&#34;,&#34;xid&#34;:&#34;column5&#34;},{&#34;sName&#34;:&#34;qty&#34;,&#34;xid&#34;:&#34;column8&#34;},{&#34;className&#34;:&#34;x-dt-cell-center&#34;,&#34;sName&#34;:&#34;isornot&#34;,&#34;xid&#34;:&#34;column1&#34;}],&#34;data&#34;:&#34;countListData&#34;,&#34;flexibleWidth&#34;:true,&#34;ordering&#34;:false,&#34;responsive&#34;:true,&#34;rowActiveClass&#34;:&#34;active&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" __cid="cmI3yAz"></table>
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cmI3yAz" class="cmI3yAz">.x-panel.pcNVfYrq-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcNVfYrq-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcNVfYrq-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNVfYrq-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNVfYrq-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcNVfYrq-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNVfYrq-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNVfYrq-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNVfYrq-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cE3IFzu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cE3IFzu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cE3IFzu" class="cE3IFzu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcz26bmu-iosstatusbar cE3IFzu" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cE3IFzu"> 
+    <div class="x-panel-top cE3IFzu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3IFzu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cE3IFzu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;移库&#34;}" __cid="cE3IFzu"> 
+        <div class="x-titlebar-left cE3IFzu" __cid="cE3IFzu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cE3IFzu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cE3IFzu"> 
+            <i class="icon-chevron-left cE3IFzu" __cid="cE3IFzu"></i>  
+            <span __cid="cE3IFzu" class="cE3IFzu"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cE3IFzu" __cid="cE3IFzu">移库</div>  
+        <div class="x-titlebar-right  cE3IFzu" __cid="cE3IFzu">
+          <div class="empty cE3IFzu" __cid="cE3IFzu"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cE3IFzu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3IFzu"> 
+      <ul xid="ul1" __cid="cE3IFzu" class="cE3IFzu"> 
+        <li class="list-group-item cE3IFzu" xid="li1" __cid="cE3IFzu"> 
+          <div class="input-group cE3IFzu" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cE3IFzu"> 
+            <span xid="span2" style="background-color:#FFFFFF;" class="input-group-addon cE3IFzu" __cid="cE3IFzu">运输任务号：</span>  
+            <input type="text" component="$model/UI2/system/components/justep/input/input" xid="tranId" class="form-control cE3IFzu" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入运输任务号或扫码录入&#34;,&#34;valueUpdateMode&#34;:&#34;keypress&#34;}" __cid="cE3IFzu">
+          </div> 
+        </li>  
+        <li class="list-group-item cE3IFzu" xid="li2" style="height:73px;" __cid="cE3IFzu"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table cE3IFzu" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cE3IFzu"> 
+            <tr xid="tr3" __cid="cE3IFzu" class="cE3IFzu">
+              <td xid="td5" style="width:50%;" __cid="cE3IFzu" class="cE3IFzu">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cE3IFzu" xid="scanBtn" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&#34;disabled&#34;:true,&#34;label&#34;:&#34;扫一扫&#34;}" __cid="cE3IFzu"> 
+                  <i xid="i4" __cid="cE3IFzu" class="cE3IFzu"></i>  
+                  <span xid="span5" __cid="cE3IFzu" class="cE3IFzu">扫一扫</span>
+                </a>
+              </td>  
+              <td xid="td6" style="width:50%;" __cid="cE3IFzu" class="cE3IFzu">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cE3IFzu" xid="submitBtn" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&#34;label&#34;:&#34;提交&#34;}" __cid="cE3IFzu"> 
+                  <i xid="i1" __cid="cE3IFzu" class="cE3IFzu"></i>  
+                  <span xid="span1" __cid="cE3IFzu" class="cE3IFzu">提交</span>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </li> 
+      </ul>  
+      <ul xid="ul2" __cid="cE3IFzu" class="cE3IFzu">
+        <li xid="li4" class="list-group-item cE3IFzu" __cid="cE3IFzu">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row cE3IFzu" xid="emptyRow" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:$model.fileData.getCount() == 0" __cid="cE3IFzu"> 
+            <div class="x-col x-col-center cE3IFzu" xid="col1" __cid="cE3IFzu"> 
+              <label xid="label3" style="color:#C0C0C0;" __cid="cE3IFzu" class="cE3IFzu">无历史记录</label>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cE3IFzu" xid="fileList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'fileListClick')}" data-config="{&#34;data&#34;:&#34;fileData&#34;}" __cid="cE3IFzu"> 
+            <ul class="x-list-template hide cE3IFzu" xid="listTemplateUl1" __cid="cE3IFzu" data-bind="foreach:{data:$model.foreach_fileList($element),afterRender:$model.foreach_afterRender_fileList.bind($model,$element)}"> 
+              <li xid="li3" class="x-flex list-row cE3IFzu" __cid="cE3IFzu"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3IFzu" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3IFzu"> 
+                  <div class="x-col cE3IFzu" xid="col4" __cid="cE3IFzu"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3IFzu" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3IFzu"> 
+                      <div class="x-col x-col-fixed cE3IFzu" xid="col7" style="width:auto;" __cid="cE3IFzu"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output title-data cE3IFzu" xid="output3" data-bind="component:{ref:ref('filePath'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cE3IFzu"></div>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3IFzu" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3IFzu"> 
+                      <div xid="col10" class="x-col x-col-fixed cE3IFzu" style="width:auto;" __cid="cE3IFzu"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data cE3IFzu" xid="output2" data-bind="component:{ref:ref('createTime'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cE3IFzu"></div>
+                      </div>  
+                      <div class="x-col cE3IFzu" xid="col3" __cid="cE3IFzu"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cE3IFzu" xid="output4" data-bind="component:{ref:ref('fileName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cE3IFzu"></div>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col x-col-fixed x-col-center cE3IFzu" xid="col6" style="width:40px;" __cid="cE3IFzu"> 
+                    <i xid="i5" class="icon-social-youtube-outline cE3IFzu" style="font-size:25px;color:#C0C0C0;font-weight:100;" __cid="cE3IFzu"></i>
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>
+          <div xid="div6" __cid="cE3IFzu" class="cE3IFzu"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray device-button-black cE3IFzu" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&#34;label&#34;:&#34;清空历史记录&#34;}" __cid="cE3IFzu"> 
+              <i xid="i2" __cid="cE3IFzu" class="cE3IFzu"></i>  
+              <span xid="span4" __cid="cE3IFzu" class="cE3IFzu">清空历史记录</span>
+            </a> 
+          </div>
+        </li>
+      </ul> 
+    </div>  
+    <style __cid="cE3IFzu" class="cE3IFzu">.x-panel.pcz26bmu-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcz26bmu-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcz26bmu-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcz26bmu-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26bmu-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcz26bmu-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26bmu-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26bmu-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26bmu-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="tranLineDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;routable&#34;:true,&#34;src&#34;:&#34;$model/UI2/Erp/transfer/tranLine.w&#34;}" __cid="cE3IFzu" class="cE3IFzu">
+    <div class="x-dialog-overlay cE3IFzu" __cid="cE3IFzu"></div>
+    <div class="x-dialog cE3IFzu" style="display:none;" __cid="cE3IFzu">
+      <div class="x-dialog-title cE3IFzu" __cid="cE3IFzu">
+        <button class="close cE3IFzu" __cid="cE3IFzu">
+          <span __cid="cE3IFzu" class="cE3IFzu">×</span>
+        </button>
+        <div class="x-dialog-title-text cE3IFzu" __cid="cE3IFzu"></div>
+      </div>
+      <div class="x-dialog-body cE3IFzu" __cid="cE3IFzu"></div>
+    </div>
+  </span>
+</div>

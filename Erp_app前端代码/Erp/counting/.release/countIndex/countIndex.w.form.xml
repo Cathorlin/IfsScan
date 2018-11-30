@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window caumA7v" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caumA7v" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="caumA7v" class="caumA7v"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcr63Ijq-iosstatusbar caumA7v" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caumA7v"> 
+    <div class="x-panel-top caumA7v" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caumA7v"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caumA7v" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;仓库盘点&quot;}" __cid="caumA7v"> 
+        <div class="x-titlebar-left caumA7v" __cid="caumA7v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon caumA7v" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="caumA7v"> 
+            <i class="icon-chevron-left caumA7v" __cid="caumA7v"/>  
+            <span __cid="caumA7v" class="caumA7v"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caumA7v" __cid="caumA7v">仓库盘点</div>  
+        <div class="x-titlebar-right  caumA7v" __cid="caumA7v">
+          <div class="empty caumA7v" __cid="caumA7v"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caumA7v" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caumA7v"> 
+      <ul xid="ul1" __cid="caumA7v" class="caumA7v"> 
+        <li class="list-group-item caumA7v" xid="li1" __cid="caumA7v"> 
+          <div class="input-group caumA7v" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="caumA7v"> 
+            <span xid="span2" style="background-color:#FFFFFF;" class="input-group-addon caumA7v" __cid="caumA7v">盘点报告号：</span>  
+            <input type="text" component="$model/UI2/system/components/justep/input/input" xid="countId" class="form-control caumA7v" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入盘点报告号或扫码录入&quot;}" __cid="caumA7v"/>
+          </div> 
+        </li>  
+        <li class="list-group-item caumA7v" xid="li5" __cid="caumA7v"> 
+          <div class="input-group caumA7v" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="caumA7v"> 
+            <span xid="span3" style="background-color:#FFFFFF;" class="input-group-addon caumA7v" __cid="caumA7v">仓库货位号：</span>  
+            <input type="text" component="$model/UI2/system/components/justep/input/input" xid="location" class="form-control caumA7v" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入仓库货位号或扫码录入&quot;}" __cid="caumA7v"/>
+          </div> 
+        </li>
+        <li class="list-group-item caumA7v" xid="li2" __cid="caumA7v"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table caumA7v" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="caumA7v"> 
+            <tr xid="tr3" __cid="caumA7v" class="caumA7v">
+              <td xid="td5" style="width:50%;" __cid="caumA7v" class="caumA7v">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caumA7v" xid="scanBtn" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫描盘点报告号&quot;}" __cid="caumA7v"> 
+                  <i xid="i4" __cid="caumA7v" class="caumA7v"/>  
+                  <span xid="span5" __cid="caumA7v" class="caumA7v">扫描盘点报告号</span>
+                </a>
+              </td> 
+            </tr>  
+            <tr xid="tr1" __cid="caumA7v" class="caumA7v">
+              <td xid="td3" style="width:50%;" __cid="caumA7v" class="caumA7v"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caumA7v" xid="button2" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫描货位号&quot;}" __cid="caumA7v"> 
+                  <i xid="i6" __cid="caumA7v" class="caumA7v"/>  
+                  <span xid="span7" __cid="caumA7v" class="caumA7v">扫描货位号</span>
+                </a> 
+              </td>
+            </tr>  
+            <tr xid="tr4" __cid="caumA7v" class="caumA7v">
+              <td xid="td2" style="width:50%;" __cid="caumA7v" class="caumA7v"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caumA7v" xid="button1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="caumA7v"> 
+                  <i xid="i3" __cid="caumA7v" class="caumA7v"/>  
+                  <span xid="span6" __cid="caumA7v" class="caumA7v">提交</span>
+                </a> 
+              </td>
+            </tr>
+          </table>
+        </li> 
+      </ul>  
+      <ul xid="ul2" __cid="caumA7v" class="caumA7v">
+        <li xid="li4" class="list-group-item caumA7v" __cid="caumA7v">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row caumA7v" xid="emptyRow" style="height:48px;" bind-visible="$model.fileData.getCount() == 0" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caumA7v"> 
+            <div class="x-col x-col-center caumA7v" xid="col1" __cid="caumA7v"> 
+              <label xid="label3" style="color:#C0C0C0;" __cid="caumA7v" class="caumA7v">无历史记录</label>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list caumA7v" xid="fileList" bind-click="fileListClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;fileData&quot;}" __cid="caumA7v"> 
+            <ul class="x-list-template hide caumA7v" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_fileList($element),afterRender:$model.foreach_afterRender_fileList.bind($model,$element)}" __cid="caumA7v"> 
+              <li xid="li3" class="x-flex list-row caumA7v" __cid="caumA7v"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row caumA7v" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caumA7v"> 
+                  <div class="x-col caumA7v" xid="col4" __cid="caumA7v"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row caumA7v" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caumA7v"> 
+                      <div class="x-col x-col-fixed caumA7v" xid="col7" style="width:auto;" __cid="caumA7v"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output title-data caumA7v" xid="output3" data-bind="component:{ref:ref('filePath'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caumA7v"/>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row caumA7v" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caumA7v"> 
+                      <div xid="col10" class="x-col x-col-fixed caumA7v" style="width:auto;" __cid="caumA7v"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data caumA7v" xid="output2" data-bind="component:{ref:ref('createTime'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caumA7v"/>
+                      </div>  
+                      <div class="x-col caumA7v" xid="col3" __cid="caumA7v"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output caumA7v" xid="output4" data-bind="component:{ref:ref('fileName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caumA7v"/>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col x-col-fixed x-col-center caumA7v" xid="col6" style="width:40px;" __cid="caumA7v"> 
+                    <i xid="i5" class="icon-social-youtube-outline caumA7v" style="font-size:25px;color:#C0C0C0;font-weight:100;" __cid="caumA7v"/>
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>
+          <div xid="div6" __cid="caumA7v" class="caumA7v"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray device-button-black caumA7v" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;label&quot;:&quot;清空历史记录&quot;}" __cid="caumA7v"> 
+              <i xid="i2" __cid="caumA7v" class="caumA7v"/>  
+              <span xid="span4" __cid="caumA7v" class="caumA7v">清空历史记录</span>
+            </a> 
+          </div>
+        </li>
+      </ul> 
+    </div>  
+    <style __cid="caumA7v" class="caumA7v">.x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcr63Ijq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="countLineDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/Erp/counting/countLine.w&quot;}" __cid="caumA7v" class="caumA7v">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay caumA7v" __cid="caumA7v"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog caumA7v" style="display:none;" __cid="caumA7v">
+      <xhtml:div class="x-dialog-title caumA7v" __cid="caumA7v">
+        <xhtml:button class="close caumA7v" __cid="caumA7v">
+          <xhtml:span __cid="caumA7v" class="caumA7v">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text caumA7v" __cid="caumA7v"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body caumA7v" __cid="caumA7v"/>
+    </xhtml:div>
+  </span>
+</div>

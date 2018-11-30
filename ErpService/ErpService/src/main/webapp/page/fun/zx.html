@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin 控制台主页一</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../layuiadmin/style/admin.css" media="all">
+</head>
+<body onload="getZx()">
+  
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+      <div class="layui-col-md12">
+        <div class="layui-card">
+          <div class="layui-card-header"></div>
+          <div class="layui-card-body layui-text">
+          	<form class="layui-form" action="">
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">箱号</label>
+			    <div class="layui-input-block">
+			      <input type="text" id="box_no" name="box_no" lay-verify="required" autocomplete="off" placeholder="请扫码或手工录入" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">生产订单号</label>
+			    <div class="layui-input-block">
+			      <input type="text" id="shop_order_no" name="shop_order_no" lay-verify="required" placeholder="请扫码或手工录入" autocomplete="off" class="layui-input" value="#(session.zx.shop_order_no)">
+			    	<!-- <button type="button" class="layui-btn" id="getPart" style="margin-top:2px">获取零件信息</button> -->
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">数量</label>
+			    <div class="layui-input-block">
+			      <input type="text" id="qty" name="qty" lay-verify="required|validateQty" placeholder="请输入装箱数量" autocomplete="off" class="layui-input" value="#(session.zx.qty)">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">零件号</label>
+			    <div class="layui-input-block">
+			      <input type="text" id="part_no" name="part_no" lay-verify="required" placeholder="" autocomplete="off" class="layui-input" value="#(session.zx.part_no)">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">零件批次</label>
+			    <div class="layui-input-block">
+			      <input type="text" id="lot_batch_no" name="lot_batch_no" lay-verify="required" placeholder="" autocomplete="off" class="layui-input" value="#(session.zx.lot_batch_no)">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <div class="layui-input-block">
+			      <button type="button" class="layui-btn" lay-submit="" lay-filter="demo1">确认打包</button>
+			      <button id="reset" type="button" class="layui-btn layui-btn-primary">重置</button>
+			    </div>
+			  </div>
+			  </form>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="/layuiadmin/layui/layui.js?t=1"></script>  
+  <script src="/js/jquery.min.js"></script>  
+  <script>
+	function getZx(){
+		var b = document.getElementById('box_no');
+		b.focus();
+	}
+
+ /*  function getPart(){
+		$.ajax({
+	  		url:'/fun/getPart',
+	  		type:'post',
+	  		dataType:"json",
+	  		data: {shop_order_no:$("#shop_order_no").val()},
+	  		success:function(data){
+	  			if(data.code==0){
+	  				layer.alert('内容')
+	  				if(res.result==1){
+	        		  $("#part_no").val(res.part_no);
+	        		  $("#lot_batch_no").val(res.lot_batch_no);
+	        	    }
+	  				alert(data.msg);
+			  	}else{
+					layer.msg("获取接口异常");
+				}
+	  		},
+	  		error:function(msg){
+	  			alert(msg);
+	  		}
+		});
+	} */
+  layui.config({
+    base: '/layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index','form', 'console','element'], function(){
+	var form = layui.form,
+	admin = layui.admin
+	,element = layui.element
+	,$ = layui.jquery;
+
+
+	form.verify({
+	　　　　validateQty: [
+	　　　　　　/^\+?[1-9]\d*$/  //正则表达式
+	　　　　　　,'装箱数量只能为大于0的正整数'  //提示信息
+	　　　　] 
+	　　});
+	
+	$(document).keyup(function(event){
+		  if(event.keyCode ==13){
+			  var isFocus1=$("#box_no").is(":focus"); 
+			  var isFocus2=$("#shop_order_no").is(":focus");
+			  if(isFocus1){
+				  var b = document.getElementById('shop_order_no');
+					b.focus();
+			  }else if(isFocus2){
+				  admin.req({
+				        url: '/fun/getPart' //实际使用请改成服务端真实接口
+				        ,data: {shop_order_no:$("#shop_order_no").val()}
+				        ,done: function(res){
+				          layer.msg(res.msg, {
+				            offset: '15px'
+				            ,time: 1000
+				            ,icon:res.icon
+				          }, function(){
+				        	  if(res.code==0){
+					  				if(res.result==1){
+					        		  $("#part_no").val(res.part_no);
+					        		  $("#lot_batch_no").val(res.lot_batch_no);
+					        		  var b = document.getElementById('qty');
+										b.focus();
+					        	    }
+							  	}else{
+									layer.msg("获取接口异常");
+								}
+				          });
+				        }
+				      });
+			  }
+		  }
+		});
+	/* $('#getPart').on('click', function(){
+		admin.req({
+	        url: '/fun/getPart' //实际使用请改成服务端真实接口
+	        ,data: {shop_order_no:$("#shop_order_no").val()}
+	        ,done: function(res){
+	          layer.msg(res.msg, {
+	            offset: '15px'
+	            ,time: 1000
+	          }, function(){
+	        	  if(res.code==0){
+		  				if(res.result==1){
+		        		  $("#part_no").val(res.part_no);
+		        		  $("#lot_batch_no").val(res.lot_batch_no);
+		        	    }
+				  	}else{
+						layer.msg("获取接口异常");
+					}
+	          });
+	        }
+	      });
+	  }); */
+
+	  $('#reset').on('click', function(){
+			$("#box_no").val("");
+			$("#shop_order_no").val("");
+			$("#part_no").val("");
+			$("#lot_batch_no").val("");
+			$("#qty").val("");
+			var b = document.getElementById('box_no');
+			b.focus();
+		  });
+	
+	form.on('submit(demo1)', function(data){
+		admin.req({
+	        url: '/fun/confirm' //实际使用请改成服务端真实接口
+	        ,data: data.field
+	        ,done: function(res){
+	          layer.msg(res.msg, {
+	            offset: '15px'
+	            ,time: 2000
+	            ,icon:res.icon
+	          }, function(){
+	        	  if(res.result==1){
+	        		  location.href = '/fun/toPrint/'+res.id; //后台主页
+	        	  }
+	          });
+	        }
+	      });
+		
+	    /* layer.alert(JSON.stringify(data.field), {
+	      title: '最终的提交信息'
+	    }) */
+	    return false;
+	  });
+
+  });
+  </script>
+</body>
+</html>
+

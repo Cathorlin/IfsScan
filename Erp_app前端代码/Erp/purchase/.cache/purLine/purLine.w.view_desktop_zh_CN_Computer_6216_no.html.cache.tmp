@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cRFnuQv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRFnuQv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/bootstrap/accordion/accordion,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cRFnuQv" class="cRFnuQv"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cRFnuQv" class="cRFnuQv"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="orderLineDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:orderLineDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/purchase/orderLineInfo.w&quot;}" __cid="cRFnuQv" class="cRFnuQv"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cRFnuQv" __cid="cRFnuQv"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cRFnuQv" style="display:none;" __cid="cRFnuQv">  
+      <div class="x-dialog-title cRFnuQv" __cid="cRFnuQv"> 
+        <button class="close cRFnuQv" __cid="cRFnuQv"> 
+          <span __cid="cRFnuQv" class="cRFnuQv">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cRFnuQv" __cid="cRFnuQv"/> 
+      </div>  
+      <div class="x-dialog-body cRFnuQv" __cid="cRFnuQv"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc26zYfm-iosstatusbar cRFnuQv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRFnuQv"> 
+    <div class="x-panel-top cRFnuQv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRFnuQv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cRFnuQv" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;采购订单接收&quot;}" __cid="cRFnuQv"> 
+        <div class="x-titlebar-left cRFnuQv" __cid="cRFnuQv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRFnuQv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cRFnuQv"> 
+            <i class="icon-chevron-left cRFnuQv" __cid="cRFnuQv"/>  
+            <span __cid="cRFnuQv" class="cRFnuQv"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cRFnuQv" __cid="cRFnuQv">采购订单接收</div>  
+        <div class="x-titlebar-right  cRFnuQv" __cid="cRFnuQv"> 
+          <div class="empty cRFnuQv" __cid="cRFnuQv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cRFnuQv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRFnuQv"> 
+      <ul xid="ul1" __cid="cRFnuQv" class="cRFnuQv"> 
+        <li class="list-group-item cRFnuQv" xid="li1" __cid="cRFnuQv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+            <label class="x-label cRFnuQv" xid="label1" style="text-align:right;" __cid="cRFnuQv">订单号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="purOrderNo" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+            <label class="x-label cRFnuQv" xid="label2" style="text-align:right;" __cid="cRFnuQv">供应商代码：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="purSupplier" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+            <label class="x-label cRFnuQv" xid="label3" style="text-align:right;" __cid="cRFnuQv">供应商名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="purSupplierName" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+            <label class="x-label cRFnuQv" xid="label4" style="text-align:right;" __cid="cRFnuQv">订单日期：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="orderDate" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+          </div> 
+        </li>  
+        <li class="list-group-item cRFnuQv" xid="li2" style="height:73px;" __cid="cRFnuQv"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table cRFnuQv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cRFnuQv"> 
+            <tr xid="tr3" __cid="cRFnuQv" class="cRFnuQv"> 
+              <td xid="td5" style="width:50%;" __cid="cRFnuQv" class="cRFnuQv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRFnuQv" xid="scanBtn" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫一扫&quot;}" __cid="cRFnuQv"> 
+                  <i xid="i4" __cid="cRFnuQv" class="cRFnuQv"/>  
+                  <span xid="span5" __cid="cRFnuQv" class="cRFnuQv">扫一扫</span> 
+                </a> 
+              </td>  
+              <td xid="td6" style="width:50%;" __cid="cRFnuQv" class="cRFnuQv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRFnuQv" xid="submitBtn" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&quot;label&quot;:&quot;确认接收&quot;}" __cid="cRFnuQv"> 
+                  <i xid="i1" __cid="cRFnuQv" class="cRFnuQv"/>  
+                  <span xid="span1" __cid="cRFnuQv" class="cRFnuQv">确认接收</span> 
+                </a> 
+              </td> 
+            </tr> 
+          </table> 
+        </li>  
+        <li class="list-group-item cRFnuQv" xid="li6" __cid="cRFnuQv"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row cRFnuQv" xid="row25" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:$model.scanData.getCount() == 0" __cid="cRFnuQv"> 
+            <div class="x-col x-col-center cRFnuQv" xid="col28" __cid="cRFnuQv"> 
+              <label xid="label12" style="color:#C0C0C0;" __cid="cRFnuQv" class="cRFnuQv">无扫码记录</label> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cRFnuQv" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'fileListClick')}" data-config="{&quot;data&quot;:&quot;scanData&quot;}" __cid="cRFnuQv"> 
+            <ul class="x-list-template hide cRFnuQv" xid="listTemplateUl5" __cid="cRFnuQv" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+              <div component="$model/UI2/system/components/bootstrap/accordion/accordion" class="panel-group cRFnuQv" xid="accordion3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/accordion/accordion'}" __cid="cRFnuQv"> 
+                <div class="panel panel-default cRFnuQv" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cRFnuQv"> 
+                  <div class="panel-heading cRFnuQv" xid="heading3" __cid="cRFnuQv"> 
+                    <h4 class="panel-title cRFnuQv" xid="h43" style="text-align:right;" __cid="cRFnuQv"> 
+                      <div xid="div2" align="left" style="float:left;" __cid="cRFnuQv" class="cRFnuQv"> 
+                        <label xid="label17" __cid="cRFnuQv" class="cRFnuQv" data-bind="text:ref(&quot;PARTDESC&quot;)"/> 
+                      </div>  
+                      <i xid="i9" class="linear linear-cross cRFnuQv" style="font-size:25px;color:#C0C0C0;font-weight:100;text-align:right;right:0px;clip:rect(auto 0px auto auto);" __cid="cRFnuQv"/> 
+                    </h4> 
+                  </div>  
+                  <div class="panel-collapse collapse in cRFnuQv" xid="div5" __cid="cRFnuQv"> 
+                    <li class="list-group-item cRFnuQv" xid="li3" __cid="cRFnuQv"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label5" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">行号：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output1" data-bind="component:{ref:ref(&quot;LINE_NO&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label6" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">下达号：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output2" data-bind="component:{ref:ref(&quot;RELEASE_NO&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label11" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">零件号：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output6" data-bind="component:{ref:ref(&quot;PARTNO&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label13" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">零件名称：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output8" data-bind="component:{ref:ref(&quot;PARTDESC&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label14" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">数量：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output7" data-bind="component:{ref:ref(&quot;QTY&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label15" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">库位：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output9" data-bind="component:{ref:ref(&quot;LOCATION&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit15" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label16" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">批次：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output10" data-bind="component:{ref:ref(&quot;LOT_BATCH_NO&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRFnuQv" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRFnuQv"> 
+                        <label class="x-label cRFnuQv" xid="label7" style="text-align:right;color:#C0C0C0;" __cid="cRFnuQv">接收查询号：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRFnuQv" xid="output3" data-bind="component:{ref:ref(&quot;ReceiptReference&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRFnuQv"/> 
+                      </div> 
+                    </li> 
+                  </div> 
+                </div> 
+              </div> 
+            </ul> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cRFnuQv" class="cRFnuQv">.x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc26zYfm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

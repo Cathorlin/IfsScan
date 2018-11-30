@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cb2Ibuy" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cb2Ibuy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cb2Ibuy" class="cb2Ibuy"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3MJjUr-iosstatusbar cb2Ibuy" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cb2Ibuy"> 
+    <div class="x-panel-top cb2Ibuy" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cb2Ibuy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cb2Ibuy" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;生产报工&quot;}" __cid="cb2Ibuy"> 
+        <div class="x-titlebar-left cb2Ibuy" __cid="cb2Ibuy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cb2Ibuy" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cb2Ibuy"> 
+            <i class="icon-chevron-left cb2Ibuy" __cid="cb2Ibuy"/>  
+            <span __cid="cb2Ibuy" class="cb2Ibuy"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cb2Ibuy" __cid="cb2Ibuy">生产报工</div>  
+        <div class="x-titlebar-right  cb2Ibuy" __cid="cb2Ibuy">
+          <div class="empty cb2Ibuy" __cid="cb2Ibuy"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cb2Ibuy" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cb2Ibuy"> 
+      <ul xid="ul1" __cid="cb2Ibuy" class="cb2Ibuy"> 
+        <li class="list-group-item cb2Ibuy" xid="li1" __cid="cb2Ibuy"> 
+          <div class="input-group cb2Ibuy" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cb2Ibuy"> 
+            <span xid="span2" style="background-color:#FFFFFF;" class="input-group-addon cb2Ibuy" __cid="cb2Ibuy">生产订单号：</span>  
+            <input type="text" component="$model/UI2/system/components/justep/input/input" xid="soInfo" class="form-control cb2Ibuy" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入车间订单号或扫码录入&quot;,&quot;valueUpdateMode&quot;:&quot;keypress&quot;}" __cid="cb2Ibuy"/>
+          </div> 
+        </li>  
+        <li class="list-group-item cb2Ibuy" xid="li5" __cid="cb2Ibuy"> 
+          <div class="input-group cb2Ibuy" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cb2Ibuy"> 
+            <span xid="span3" style="background-color:#FFFFFF;" class="input-group-addon cb2Ibuy" __cid="cb2Ibuy">生产工序号：</span>  
+            <input type="text" component="$model/UI2/system/components/justep/input/input" xid="operationNo" class="form-control cb2Ibuy" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入生产工序号或扫码录入&quot;,&quot;valueUpdateMode&quot;:&quot;keypress&quot;}" __cid="cb2Ibuy"/>
+          </div> 
+        </li>
+        <li class="list-group-item cb2Ibuy" xid="li2" __cid="cb2Ibuy"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table cb2Ibuy" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cb2Ibuy"> 
+            <tr xid="tr3" __cid="cb2Ibuy" class="cb2Ibuy">
+              <td xid="td5" style="width:50%;" __cid="cb2Ibuy" class="cb2Ibuy">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cb2Ibuy" xid="scanBtn" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫描生产订单号&quot;}" __cid="cb2Ibuy"> 
+                  <i xid="i4" __cid="cb2Ibuy" class="cb2Ibuy"/>  
+                  <span xid="span5" __cid="cb2Ibuy" class="cb2Ibuy">扫描生产订单号</span>
+                </a>
+              </td> 
+            </tr>  
+            <tr xid="tr1" __cid="cb2Ibuy" class="cb2Ibuy">
+              <td xid="td3" style="width:50%;" __cid="cb2Ibuy" class="cb2Ibuy"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cb2Ibuy" xid="button2" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫描工序号&quot;}" __cid="cb2Ibuy"> 
+                  <i xid="i6" __cid="cb2Ibuy" class="cb2Ibuy"/>  
+                  <span xid="span7" __cid="cb2Ibuy" class="cb2Ibuy">扫描工序号</span>
+                </a> 
+              </td>
+            </tr>  
+            <tr xid="tr4" __cid="cb2Ibuy" class="cb2Ibuy">
+              <td xid="td2" style="width:50%;" __cid="cb2Ibuy" class="cb2Ibuy"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cb2Ibuy" xid="button1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cb2Ibuy"> 
+                  <i xid="i3" __cid="cb2Ibuy" class="cb2Ibuy"/>  
+                  <span xid="span6" __cid="cb2Ibuy" class="cb2Ibuy">提交</span>
+                </a> 
+              </td>
+            </tr>
+          </table>
+        </li> 
+      </ul>  
+      <ul xid="ul2" __cid="cb2Ibuy" class="cb2Ibuy">
+        <li xid="li4" class="list-group-item cb2Ibuy" __cid="cb2Ibuy">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row cb2Ibuy" xid="emptyRow" style="height:48px;" bind-visible="$model.fileData.getCount() == 0" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb2Ibuy"> 
+            <div class="x-col x-col-center cb2Ibuy" xid="col1" __cid="cb2Ibuy"> 
+              <label xid="label3" style="color:#C0C0C0;" __cid="cb2Ibuy" class="cb2Ibuy">无历史记录</label>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cb2Ibuy" xid="fileList" bind-click="fileListClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;fileData&quot;}" __cid="cb2Ibuy"> 
+            <ul class="x-list-template hide cb2Ibuy" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_fileList($element),afterRender:$model.foreach_afterRender_fileList.bind($model,$element)}" __cid="cb2Ibuy"> 
+              <li xid="li3" class="x-flex list-row cb2Ibuy" __cid="cb2Ibuy"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cb2Ibuy" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb2Ibuy"> 
+                  <div class="x-col cb2Ibuy" xid="col4" __cid="cb2Ibuy"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cb2Ibuy" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb2Ibuy"> 
+                      <div class="x-col x-col-fixed cb2Ibuy" xid="col7" style="width:auto;" __cid="cb2Ibuy"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output title-data cb2Ibuy" xid="output3" data-bind="component:{ref:ref('filePath'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cb2Ibuy"/>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cb2Ibuy" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb2Ibuy"> 
+                      <div xid="col10" class="x-col x-col-fixed cb2Ibuy" style="width:auto;" __cid="cb2Ibuy"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data cb2Ibuy" xid="output2" data-bind="component:{ref:ref('createTime'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cb2Ibuy"/>
+                      </div>  
+                      <div class="x-col cb2Ibuy" xid="col3" __cid="cb2Ibuy"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cb2Ibuy" xid="output4" data-bind="component:{ref:ref('fileName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cb2Ibuy"/>
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col x-col-fixed x-col-center cb2Ibuy" xid="col6" style="width:40px;" __cid="cb2Ibuy"> 
+                    <i xid="i5" class="icon-social-youtube-outline cb2Ibuy" style="font-size:25px;color:#C0C0C0;font-weight:100;" __cid="cb2Ibuy"/>
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>
+          <div xid="div6" __cid="cb2Ibuy" class="cb2Ibuy"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray device-button-black cb2Ibuy" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;label&quot;:&quot;清空历史记录&quot;}" __cid="cb2Ibuy"> 
+              <i xid="i2" __cid="cb2Ibuy" class="cb2Ibuy"/>  
+              <span xid="span4" __cid="cb2Ibuy" class="cb2Ibuy">清空历史记录</span>
+            </a> 
+          </div>
+        </li>
+      </ul> 
+    </div>  
+    <style __cid="cb2Ibuy" class="cb2Ibuy">.x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MJjUr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="bgLineInfoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/Erp/baoGong/bgLineInfo.w&quot;}" __cid="cb2Ibuy" class="cb2Ibuy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cb2Ibuy" __cid="cb2Ibuy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cb2Ibuy" style="display:none;" __cid="cb2Ibuy">
+      <xhtml:div class="x-dialog-title cb2Ibuy" __cid="cb2Ibuy">
+        <xhtml:button class="close cb2Ibuy" __cid="cb2Ibuy">
+          <xhtml:span __cid="cb2Ibuy" class="cb2Ibuy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cb2Ibuy" __cid="cb2Ibuy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cb2Ibuy" __cid="cb2Ibuy"/>
+    </xhtml:div>
+  </span>
+</div>

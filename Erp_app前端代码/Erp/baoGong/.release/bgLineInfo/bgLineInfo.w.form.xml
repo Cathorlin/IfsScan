@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cuI3qQ3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuI3qQ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuI3qQ3" class="cuI3qQ3"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cuI3qQ3" class="cuI3qQ3"/>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc73yAfu-iosstatusbar cuI3qQ3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuI3qQ3"> 
+    <div class="x-panel-top cuI3qQ3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuI3qQ3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cuI3qQ3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;报工信息&quot;}" __cid="cuI3qQ3"> 
+        <div class="x-titlebar-left cuI3qQ3" __cid="cuI3qQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuI3qQ3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuI3qQ3"> 
+            <i class="icon-chevron-left cuI3qQ3" __cid="cuI3qQ3"/>  
+            <span __cid="cuI3qQ3" class="cuI3qQ3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuI3qQ3" __cid="cuI3qQ3">报工信息</div>  
+        <div class="x-titlebar-right  cuI3qQ3" __cid="cuI3qQ3">
+          <div class="empty cuI3qQ3" __cid="cuI3qQ3"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuI3qQ3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuI3qQ3">
+      <ul xid="ul1" __cid="cuI3qQ3" class="cuI3qQ3"> 
+        <li class="list-group-item cuI3qQ3" xid="li1" __cid="cuI3qQ3"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuI3qQ3" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuI3qQ3"> 
+            <label class="x-label cuI3qQ3" xid="label6" __cid="cuI3qQ3">生产订单号</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuI3qQ3" xid="OrderNo" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cuI3qQ3"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuI3qQ3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuI3qQ3"> 
+            <label class="x-label cuI3qQ3" xid="label1" __cid="cuI3qQ3">下达号</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuI3qQ3" xid="ReleaseNo" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cuI3qQ3"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuI3qQ3" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuI3qQ3"> 
+            <label class="x-label cuI3qQ3" xid="label2" __cid="cuI3qQ3">序列</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuI3qQ3" xid="SequenceNo" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cuI3qQ3"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuI3qQ3" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuI3qQ3"> 
+            <label class="x-label cuI3qQ3" xid="label5" __cid="cuI3qQ3">工序</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuI3qQ3" xid="OperationNo" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cuI3qQ3"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuI3qQ3" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuI3qQ3"> 
+            <label class="x-label cuI3qQ3" xid="labe3" __cid="cuI3qQ3">报工数量</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuI3qQ3" xid="ReportedQty" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cuI3qQ3"/>
+          </div> 
+        </li>  
+        <li class="list-group-item cuI3qQ3" xid="li2" style="height:73px;" __cid="cuI3qQ3"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table cuI3qQ3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cuI3qQ3"> 
+            <tr xid="tr3" __cid="cuI3qQ3" class="cuI3qQ3"> 
+              <td xid="td6" style="width:50%;" __cid="cuI3qQ3" class="cuI3qQ3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cuI3qQ3" xid="submitBtn" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cuI3qQ3"> 
+                  <i xid="i1" __cid="cuI3qQ3" class="cuI3qQ3"/>  
+                  <span xid="span1" __cid="cuI3qQ3" class="cuI3qQ3">提交</span>
+                </a> 
+              </td> 
+            </tr> 
+          </table> 
+        </li> 
+      </ul>
+    </div>  
+    <style __cid="cuI3qQ3" class="cuI3qQ3">.x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc73yAfu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

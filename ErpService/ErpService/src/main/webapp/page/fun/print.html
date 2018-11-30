@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin 控制台主页一</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../layuiadmin/style/admin.css" media="all">
+  <script language="javascript" src="/js/LodopFuncs.js"></script>
+  <script type="text/javascript">
+    var LODOP; //声明为全局变量 
+	function prn1_preview() {	
+		CreateOneFormPage();	
+		LODOP.PREVIEW();	
+	};
+
+	function prn1_print() {		
+		CreateOneFormPage();
+		LODOP.PRINT();	
+	};
+
+	function CreateOneFormPage(){
+		LODOP=getLodop();  
+		LODOP.PRINT_INIT("打印箱标签");
+		LODOP.SET_PRINT_STYLE("FontSize",18);
+		LODOP.SET_PRINT_STYLE("Bold",1);
+		//LODOP.ADD_PRINT_TEXT(50,231,260,39,"打印页面部分内容");
+		LODOP.ADD_PRINT_HTM(88,200,350,600,document.getElementById("printArea").innerHTML);
+	};
+
+	function next(){
+		location.href="/fun"
+	}
+  </script>
+</head>
+<body>
+  
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+      <div class="layui-col-md12">
+        <div class="layui-card">
+          <div class="layui-card-header"></div>
+          <div class="layui-card-body layui-text">
+          	<div id="printArea">
+	          	<table border="2" cellpadding="0" cellspacing="0">
+	          		<thead></thead>
+	          		<tbody>
+	          			<tr style="text-align: center;">
+	          				<td colspan="2">箱标签</td>
+	          			</tr>
+	          			<tr>
+	          				<td style="text-align: center;width:100px ">箱号</td>
+	          				<td style="text-align: center;width:200px ">#(box.box_no)</td>
+	          			</tr>
+	          			<tr>
+	          				<td style="text-align: center;">车间订单号</td>
+	          				<td style="text-align: center;">#(box.shop_order_no)</td>
+	          			</tr>
+	          			<tr>
+	          				<td style="text-align: center;">零件号</td>
+	          				<td style="text-align: center;">#(box.part_no)</td>
+	          			</tr>
+	          			<tr>
+	          				<td style="text-align: center;">批次</td>
+	          				<td style="text-align: center;">#(box.lot_batch_no)</td>
+	          			</tr>
+	          			<tr>
+	          				<td style="text-align: center;">装箱数量</td>
+	          				<td style="text-align: center;">#(box.qty)</td>
+	          			</tr>
+	          		</tbody>
+	          	</table>
+          	</div>
+          	<div style="margin-top:5px">
+          		<button class="layui-btn layui-btn-primary" onclick="javascript:prn1_preview()">打印预览</button>
+          		<button class="layui-btn" onclick="javascript:prn1_print()">直接打印</button>
+          		<button class="layui-btn layui-btn-normal" onclick="javascript:next()">继续装箱</button>
+          	</div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="../../layuiadmin/layui/layui.js?t=1"></script>  
+  <script>
+  layui.config({
+    base: '../../layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'console']);
+  </script>
+</body>
+</html>
+

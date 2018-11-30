@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cVNZZFf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVNZZFf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cVNZZFf" class="cVNZZFf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnm6nEv-iosstatusbar cVNZZFf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+    <div class="x-panel-bottom cVNZZFf" xid="bottom" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:55}" __cid="cVNZZFf"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card cVNZZFf" xid="buttonGroup1" style="height:55px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cVNZZFf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cVNZZFf" xid="homeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;首页&quot;,&quot;target&quot;:&quot;homeContent&quot;}" __cid="cVNZZFf"> 
+          <i xid="i1" class="icon-home icon cVNZZFf" __cid="cVNZZFf"/>  
+          <span xid="span1" __cid="cVNZZFf" class="cVNZZFf">首页</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cVNZZFf" xid="msgBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-radio-waves&quot;,&quot;label&quot;:&quot;消息&quot;,&quot;target&quot;:&quot;msgContent&quot;}" __cid="cVNZZFf"> 
+          <i xid="i2" class="icon-radio-waves icon cVNZZFf" __cid="cVNZZFf"/>  
+          <span xid="span2" __cid="cVNZZFf" class="cVNZZFf">消息</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cVNZZFf" xid="foundBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-eye&quot;,&quot;label&quot;:&quot;发现&quot;,&quot;target&quot;:&quot;foundContent&quot;}" __cid="cVNZZFf"> 
+          <i xid="i3" class="icon icon-eye cVNZZFf" __cid="cVNZZFf"/>  
+          <span xid="span3" __cid="cVNZZFf" class="cVNZZFf">发现</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cVNZZFf" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;userContent&quot;}" __cid="cVNZZFf"> 
+          <i xid="i5" class="icon icon-person cVNZZFf" __cid="cVNZZFf"/>  
+          <span xid="span5" __cid="cVNZZFf" class="cVNZZFf">我的</span>
+        </a> 
+      </div> 
+    </div>
+    <div class="x-panel-content cVNZZFf" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNZZFf">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cVNZZFf" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cVNZZFf"> 
+        <div class="x-contents-content active cVNZZFf" xid="homeContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNZZFf">
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar pc2EZfii-iosstatusbar cVNZZFf" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+            <div class="x-panel-top cVNZZFf" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNZZFf"> 
+              <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cVNZZFf" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cVNZZFf"> 
+                <div class="x-titlebar-left cVNZZFf" xid="div6" __cid="cVNZZFf"/>  
+                <div class="x-titlebar-title tb-searchBox cVNZZFf" xid="div1" __cid="cVNZZFf"> 
+                  <span xid="span13" __cid="cVNZZFf" class="cVNZZFf">IFS 扫码系统</span>  
+                  <div xid="div9" __cid="cVNZZFf" class="cVNZZFf"/>
+                </div>  
+                <div class="x-titlebar-right  cVNZZFf" xid="div5" __cid="cVNZZFf">
+                  <div class="empty cVNZZFf" __cid="cVNZZFf"/>
+                </div>
+              </div> 
+            </div>
+            <div class="x-panel-content cVNZZFf" xid="content3" style="bottom: 0px;" _xid="C7FF8C0CA84000015283BDE11B9DD120" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNZZFf"> 
+              <div class="x-scroll-content cVNZZFf" xid="div30" __cid="cVNZZFf"> 
+                <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pc6ZZ7ny-iosstatusbar cVNZZFf" xid="panel7" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+                  <table class="table tb-menu cVNZZFf" component="$model/UI2/system/components/bootstrap/table/table" xid="table3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cVNZZFf"> 
+                    <tbody class="x-list-template cVNZZFf" xid="listTemplate3" __cid="cVNZZFf"> 
+                      <tr xid="tr8" __cid="cVNZZFf" class="cVNZZFf"> 
+                        <td pagename="./list.w" xid="td34" bind-click="openSaleClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div34" __cid="cVNZZFf"> 
+                            <img src="$model/UI2/Erp/img/homeMenu/ck.png" alt="" xid="image25" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span42" __cid="cVNZZFf" class="cVNZZFf">销售出库</span>
+                          </div> 
+                        </td>
+                        <td bind-click="openPurClick" pagename="./list.w" xid="td32" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div35" __cid="cVNZZFf"> 
+                            <img src="$model/UI2/Erp/img/homeMenu/rk.png" alt="" xid="image28" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;height:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span41" __cid="cVNZZFf" class="cVNZZFf">采购入库</span>
+                          </div> 
+                        </td>  
+                        <td pagename="./list.w" xid="td37" bind-click="openMrClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div35" __cid="cVNZZFf"> 
+                            <img alt="" xid="image23" src="$model/UI2/Erp/img/homeMenu/clsq.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span43" __cid="cVNZZFf" class="cVNZZFf">材料申请</span>
+                          </div> 
+                        </td> 
+                      </tr>  
+                      <tr xid="tr10" __cid="cVNZZFf" class="cVNZZFf"> 
+                        <td pagename="./list.w" xid="td36" bind-click="openSmrClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div34" __cid="cVNZZFf"> 
+                            <img alt="" xid="image26" src="$model/UI2/Erp/img/homeMenu/scll.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span40" __cid="cVNZZFf" class="cVNZZFf">生产领料</span>
+                          </div> 
+                        </td>
+                        <td pagename="./list.w" xid="td41" bind-click="openPfClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div31" __cid="cVNZZFf"> 
+                            <img alt="" xid="image22" src="$model/UI2/Erp/img/homeMenu/cprk.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span45" __cid="cVNZZFf" class="cVNZZFf">成品入库</span>
+                          </div> 
+                        </td>  
+                        <td pagename="./list.w" xid="td3" bind-click="openZtClick" __cid="cVNZZFf" class="cVNZZFf">
+                          <div class="text-center cVNZZFf" xid="div2" __cid="cVNZZFf"> 
+                            <img alt="" xid="image1" src="$model/UI2/Erp/img/homeMenu/zt.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" height="100%" __cid="cVNZZFf"/>  
+                            <span xid="span7" __cid="cVNZZFf" class="cVNZZFf">装托</span>
+                          </div>
+                        </td>
+                      </tr>  
+                      <tr xid="tr1" __cid="cVNZZFf" class="cVNZZFf">
+                        <td pagename="./list.w" xid="td33" bind-click="openTranClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div33" __cid="cVNZZFf"> 
+                            <img src="$model/UI2/Erp/img/homeMenu/yk.png" alt="" xid="image27" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span44" __cid="cVNZZFf" class="cVNZZFf">移库</span>
+                          </div> 
+                        </td>
+                        <td pagename="./list.w" xid="td35" bind-click="openCountClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div32" __cid="cVNZZFf"> 
+                            <img alt="" xid="image24" src="$model/UI2/Erp/img/homeMenu/pd.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span46" __cid="cVNZZFf" class="cVNZZFf">盘点</span>
+                          </div> 
+                        </td>  
+                        <td pagename="./list.w" xid="td2" bind-click="openSmrClick" __cid="cVNZZFf" class="cVNZZFf"/>
+                      </tr>
+                      <tr xid="tr9" __cid="cVNZZFf" class="cVNZZFf"> 
+                        <td pagename="./list.w" xid="td38" bind-click="openBgClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div32" __cid="cVNZZFf"> 
+                            <img alt="" xid="image24" src="$model/UI2/Erp/img/homeMenu/bg.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span46" __cid="cVNZZFf" class="cVNZZFf">生产报工</span>
+                          </div> 
+                        </td>
+                        <td pagename="./list.w" xid="td39" bind-click="openJjClick" __cid="cVNZZFf" class="cVNZZFf"> 
+                          <div class="text-center cVNZZFf" xid="div33" __cid="cVNZZFf"> 
+                            <img alt="" xid="image27" src="$model/UI2/Erp/img/homeMenu/jj.png" class="img-responsive center-block tb-img5 cVNZZFf" style="width:55px;" __cid="cVNZZFf"/>  
+                            <span xid="span44" __cid="cVNZZFf" class="cVNZZFf">生产交接</span>
+                          </div> 
+                        </td>
+                        <td pagename="./list.w" xid="td43" bind-click="openSmrClick" __cid="cVNZZFf" class="cVNZZFf"/> 
+                      </tr> 
+                    </tbody> 
+                  </table>  
+                  <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6ZZ7ny-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+                </div> 
+              </div>
+            </div>  
+            <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2EZfii-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+          </div>
+        </div>  
+        <div class="x-contents-content cVNZZFf" xid="msgContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNZZFf"/>  
+        <div class="x-contents-content cVNZZFf" xid="foundContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNZZFf"/>  
+        <div class="x-contents-content cVNZZFf" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNZZFf">
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYRJNba-iosstatusbar cVNZZFf" xid="panel3" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+            <div class="x-panel-top cVNZZFf" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNZZFf"> 
+              <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cVNZZFf" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cVNZZFf"> 
+                <div class="x-titlebar-left cVNZZFf" xid="left1" __cid="cVNZZFf"></div>  
+                <div class="x-titlebar-title cVNZZFf" xid="title1" __cid="cVNZZFf"> 
+                  <span xid="span4" __cid="cVNZZFf" class="cVNZZFf">我的</span>
+                </div>  
+                <div class="x-titlebar-right  cVNZZFf" xid="right1" __cid="cVNZZFf">
+                  <div class="empty cVNZZFf" __cid="cVNZZFf"/>
+                </div>
+              </div> 
+            </div>  
+            <div class="x-panel-content cVNZZFf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNZZFf"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcY7JVv2-iosstatusbar cVNZZFf" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+                <div class="list-group-item cVNZZFf" xid="div11" style="height:100px;backgroud-color:#F2F2F2;background-color:#F2F2F2;" __cid="cVNZZFf"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNZZFf" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNZZFf"> 
+                    <label class="x-label cVNZZFf" xid="label2" __cid="cVNZZFf">用户ID：</label>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVNZZFf" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNZZFf"/>
+                  </div>
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNZZFf" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNZZFf"> 
+                    <label class="x-label cVNZZFf" xid="label1" __cid="cVNZZFf">用户名：</label>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVNZZFf" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNZZFf"/>
+                  </div> 
+                </div>  
+                <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY7JVv2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+              </div>
+              <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcU3aM7j-iosstatusbar cVNZZFf" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+                <ul xid="ul1" class="list-group cVNZZFf" __cid="cVNZZFf"> 
+                  <li class="list-group-item cVNZZFf" xid="li1" __cid="cVNZZFf"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cVNZZFf" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVNZZFf"> 
+                      <i xid="i18" class="icon-ios7-arrow-right text-muted cVNZZFf" __cid="cVNZZFf"/>  
+                      <span xid="span14" __cid="cVNZZFf" class="cVNZZFf"/>
+                    </a>  
+                    <span xid="span16" __cid="cVNZZFf" class="cVNZZFf">评分鼓励</span>
+                  </li>  
+                  <li class="list-group-item cVNZZFf" xid="li1" __cid="cVNZZFf"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cVNZZFf" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVNZZFf"> 
+                      <i xid="i27" class="icon-ios7-arrow-right text-muted cVNZZFf" __cid="cVNZZFf"/>  
+                      <span xid="span4" __cid="cVNZZFf" class="cVNZZFf"/>
+                    </a>  
+                    <span xid="span15" __cid="cVNZZFf" class="cVNZZFf">分享推荐</span>
+                  </li>  
+                  <li class="list-group-item cVNZZFf" xid="li1" __cid="cVNZZFf"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cVNZZFf" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button16Click" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVNZZFf"> 
+                      <i xid="i29" class="icon-ios7-arrow-right text-muted cVNZZFf" __cid="cVNZZFf"/>  
+                      <span xid="span23" __cid="cVNZZFf" class="cVNZZFf"/>
+                    </a>  
+                    <span xid="span22" __cid="cVNZZFf" class="cVNZZFf">技术电话</span>
+                  </li>  
+                  <li class="list-group-item cVNZZFf" xid="li4" __cid="cVNZZFf"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cVNZZFf" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;}" __cid="cVNZZFf"> 
+                      <i xid="i4" class="icon-ios7-arrow-right cVNZZFf" __cid="cVNZZFf"/>  
+                      <span xid="span16" __cid="cVNZZFf" class="cVNZZFf"/>
+                    </a>  
+                    <span xid="span6" __cid="cVNZZFf" class="cVNZZFf">问题反馈</span>
+                  </li> 
+                </ul>  
+                <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcU3aM7j-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+              </div>  
+              <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcNzq67r-iosstatusbar cVNZZFf" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+                <div class="list-group-item cVNZZFf" xid="div10" __cid="cVNZZFf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cVNZZFf" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVNZZFf"> 
+                    <i xid="i31" class="icon-ios7-arrow-right text-muted cVNZZFf" __cid="cVNZZFf"/>  
+                    <span xid="span26" __cid="cVNZZFf" class="cVNZZFf"/>
+                  </a>  
+                  <span xid="span25" __cid="cVNZZFf" class="cVNZZFf">设置锁屏图案</span>
+                </div>  
+                <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNzq67r-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+              </div>  
+              <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcMZRBje-iosstatusbar cVNZZFf" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNZZFf"> 
+                <div class="list-group-item cVNZZFf" xid="div10" align="center" __cid="cVNZZFf"> 
+                  <span xid="quit" bind-click="quitClick" __cid="cVNZZFf" class="cVNZZFf">切换用户</span>
+                </div>  
+                <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMZRBje-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+              </div> 
+            </div>  
+            <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYRJNba-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <style __cid="cVNZZFf" class="cVNZZFf">.x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 55px;}.x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-bottom {height: 55px;}.iosstatusbar .x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnm6nEv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="ztDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/zt/ztIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cVNZZFf" __cid="cVNZZFf">
+      <xhtml:div class="x-modal-inner cVNZZFf" __cid="cVNZZFf">
+        <xhtml:div class="x-modal-title cVNZZFf" __cid="cVNZZFf"></xhtml:div>
+        <xhtml:div class="x-modal-text cVNZZFf" __cid="cVNZZFf"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cVNZZFf" type="text" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cVNZZFf" __cid="cVNZZFf">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cVNZZFf" value="ok" __cid="cVNZZFf">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cVNZZFf" value="yes" __cid="cVNZZFf">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cVNZZFf" value="no" __cid="cVNZZFf">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cVNZZFf" value="cancel" __cid="cVNZZFf">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="purchaseDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/Erp/purchase/purIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="saleDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/Erp/sale/saleIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="transferDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/transfer/tranIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mrDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/materialReq/mrIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="smrDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/shopMaterialReq/smrIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="countDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/counting/countIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="bgDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/baoGong/bgIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="jjDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/jiaoJie/jjIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="pfDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/Erp/productFinished/pfIndex.w&quot;}" __cid="cVNZZFf" class="cVNZZFf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVNZZFf" __cid="cVNZZFf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVNZZFf" style="display:none;" __cid="cVNZZFf">
+      <xhtml:div class="x-dialog-title cVNZZFf" __cid="cVNZZFf">
+        <xhtml:button class="close cVNZZFf" __cid="cVNZZFf">
+          <xhtml:span __cid="cVNZZFf" class="cVNZZFf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVNZZFf" __cid="cVNZZFf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVNZZFf" __cid="cVNZZFf"/>
+    </xhtml:div>
+  </span>
+</div>

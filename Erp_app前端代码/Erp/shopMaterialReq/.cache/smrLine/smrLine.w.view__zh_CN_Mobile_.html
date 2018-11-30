@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window camuQRf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="camuQRf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/bootstrap/accordion/accordion,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="camuQRf" class="camuQRf"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="camuQRf" class="camuQRf"></span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="smrLineInfoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:smrLineDialogReceive" data-config="{&#34;routable&#34;:true,&#34;src&#34;:&#34;$model/UI2/Erp/shopMaterialReq/smrLineInfo.w&#34;}" __cid="camuQRf" class="camuQRf">
+    <div class="x-dialog-overlay camuQRf" __cid="camuQRf"></div>
+    <div class="x-dialog camuQRf" style="display:none;" __cid="camuQRf">
+      <div class="x-dialog-title camuQRf" __cid="camuQRf">
+        <button class="close camuQRf" __cid="camuQRf">
+          <span __cid="camuQRf" class="camuQRf">×</span>
+        </button>
+        <div class="x-dialog-title-text camuQRf" __cid="camuQRf"></div>
+      </div>
+      <div class="x-dialog-body camuQRf" __cid="camuQRf"></div>
+    </div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcquINBb-iosstatusbar camuQRf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="camuQRf"> 
+    <div class="x-panel-top camuQRf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="camuQRf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar camuQRf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;生产订单&#34;}" __cid="camuQRf"> 
+        <div class="x-titlebar-left camuQRf" __cid="camuQRf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon camuQRf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="camuQRf"> 
+            <i class="icon-chevron-left camuQRf" __cid="camuQRf"></i>  
+            <span __cid="camuQRf" class="camuQRf"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title camuQRf" __cid="camuQRf">生产订单</div>  
+        <div class="x-titlebar-right  camuQRf" __cid="camuQRf">
+          <div class="empty camuQRf" __cid="camuQRf"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content camuQRf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="camuQRf">
+      <ul xid="ul1" __cid="camuQRf" class="camuQRf"> 
+        <li class="list-group-item camuQRf" xid="li1" __cid="camuQRf"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+            <label class="x-label camuQRf" xid="label1" style="text-align:right;" __cid="camuQRf">订单号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block x-edit camuQRf" xid="soId" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+            <label class="x-label camuQRf" xid="label3" style="text-align:right;" __cid="camuQRf">成品零件号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block x-edit camuQRf" xid="part_no" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+            <label class="x-label camuQRf" xid="label2" style="text-align:right;" __cid="camuQRf">零件名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block x-edit camuQRf" xid="part_desc" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+          </div>
+        </li>  
+        <li class="list-group-item camuQRf" xid="li2" style="height:73px;" __cid="camuQRf"> 
+          <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table camuQRf" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="camuQRf"> 
+            <tr xid="tr3" __cid="camuQRf" class="camuQRf"> 
+              <td xid="td5" style="width:50%;" __cid="camuQRf" class="camuQRf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default camuQRf" xid="scanBtn" style="width:100%" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&#34;disabled&#34;:true,&#34;label&#34;:&#34;扫一扫&#34;}" __cid="camuQRf"> 
+                  <i xid="i4" __cid="camuQRf" class="camuQRf"></i>  
+                  <span xid="span5" __cid="camuQRf" class="camuQRf">扫一扫</span>
+                </a> 
+              </td>  
+              <td xid="td6" style="width:50%;" __cid="camuQRf" class="camuQRf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default camuQRf" xid="submitBtn" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&#34;label&#34;:&#34;确认下发&#34;}" __cid="camuQRf"> 
+                  <i xid="i1" __cid="camuQRf" class="camuQRf"></i>  
+                  <span xid="span1" __cid="camuQRf" class="camuQRf">确认下发</span>
+                </a> 
+              </td> 
+            </tr> 
+          </table> 
+        </li>  
+        <li class="list-group-item camuQRf" xid="li4" __cid="camuQRf"> 
+          <table component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" responsive="true" rowActiveClass="active" class="table table-hover table-striped camuQRf" xid="dataTables1" data="smrLineData" style="font-size:xx-small;" ordering="false" data-config="{&#34;columns&#34;:[{&#34;sName&#34;:&#34;part_no&#34;,&#34;width&#34;:&#34;25%&#34;,&#34;xid&#34;:&#34;column6&#34;},{&#34;sName&#34;:&#34;description&#34;,&#34;width&#34;:&#34;35%&#34;,&#34;xid&#34;:&#34;column7&#34;},{&#34;sName&#34;:&#34;lot_batch_no&#34;,&#34;xid&#34;:&#34;column5&#34;},{&#34;sName&#34;:&#34;qty&#34;,&#34;xid&#34;:&#34;column8&#34;}],&#34;data&#34;:&#34;smrLineData&#34;,&#34;flexibleWidth&#34;:true,&#34;ordering&#34;:false,&#34;responsive&#34;:true,&#34;rowActiveClass&#34;:&#34;active&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" __cid="camuQRf"></table>
+        </li>  
+        <li class="list-group-item camuQRf" xid="li6" __cid="camuQRf"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row camuQRf" xid="row25" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:$model.scanData.getCount() == 0" __cid="camuQRf"> 
+            <div class="x-col x-col-center camuQRf" xid="col28" __cid="camuQRf"> 
+              <label xid="label12" style="color:#C0C0C0;" __cid="camuQRf" class="camuQRf">无扫码记录</label>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list camuQRf" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'fileListClick')}" data-config="{&#34;data&#34;:&#34;scanData&#34;}" __cid="camuQRf"> 
+            <ul class="x-list-template hide camuQRf" xid="listTemplateUl5" __cid="camuQRf" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+              <div component="$model/UI2/system/components/bootstrap/accordion/accordion" class="panel-group camuQRf" xid="accordion3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/accordion/accordion'}" __cid="camuQRf"> 
+                <div class="panel panel-default camuQRf" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="camuQRf"> 
+                  <div class="panel-heading camuQRf" xid="heading3" __cid="camuQRf"> 
+                    <h4 class="panel-title camuQRf" xid="h43" style="text-align:right;" __cid="camuQRf"> 
+                      <div xid="div2" align="left" style="float:left;" __cid="camuQRf" class="camuQRf"> 
+                        <label xid="label17" __cid="camuQRf" class="camuQRf" data-bind="text:ref('description')"></label>
+                      </div>  
+                      <i xid="i9" class="linear linear-cross camuQRf" style="font-size:25px;color:#C0C0C0;font-weight:100;text-align:right;right:0px;clip:rect(auto 0px auto auto);" __cid="camuQRf"></i>
+                    </h4> 
+                  </div>  
+                  <div class="panel-collapse collapse in camuQRf" xid="div5" __cid="camuQRf"> 
+                    <li class="list-group-item camuQRf" xid="li3" __cid="camuQRf"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+                        <label class="x-label camuQRf" xid="label11" style="text-align:right;color:#C0C0C0;" __cid="camuQRf">零件号：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit camuQRf" xid="output6" data-bind="component:{ref:ref(&#34;part_no&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+                        <label class="x-label camuQRf" xid="label13" style="text-align:right;color:#C0C0C0;" __cid="camuQRf">零件名称：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit camuQRf" xid="output8" data-bind="component:{ref:ref(&#34;description&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+                        <label class="x-label camuQRf" xid="label14" style="text-align:right;color:#C0C0C0;" __cid="camuQRf">批次：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit camuQRf" xid="output7" data-bind="component:{ref:ref(&#34;lot_batch_no&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 camuQRf" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="camuQRf"> 
+                        <label class="x-label camuQRf" xid="label4" style="text-align:right;color:#C0C0C0;" __cid="camuQRf">数量：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit camuQRf" xid="output2" data-bind="component:{ref:ref(&#34;qty&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="camuQRf"></div>
+                      </div>
+                    </li> 
+                  </div> 
+                </div> 
+              </div> 
+            </ul> 
+          </div> 
+        </li>
+      </ul> 
+    </div>  
+    <style __cid="camuQRf" class="camuQRf">.x-panel.pcquINBb-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcquINBb-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcquINBb-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcquINBb-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcquINBb-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcquINBb-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcquINBb-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcquINBb-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcquINBb-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
